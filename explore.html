@@ -1,0 +1,235 @@
+<!--Utforska rymden, explore.-->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+    <title>Rymdresan</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Navigation.-->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ml-6">
+          <a class="navbar-item" href="index.html">
+            <span class="navbar-item has-text-weight-bold is-size-3"
+              >RymdResan</span
+            >
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu mr-6">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="explore.html">Utforska rymden</a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="solar-system.html">Solsystemet</a>
+                <a class="navbar-item" href="#">Galaxer och Stjärnor</a>
+                <a class="navbar-item" href="#">Rymdfenomen</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Lektioner och Galaxer</a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Interaktiva Lektioner</a>
+                <a class="navbar-item" href="#">Hemmaexperiment</a>
+                <a class="navbar-item" href="quiz.html">Quiz och Frågesport</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#">Rymdforskning</a>
+            <a class="navbar-item" href="events.html">Astromiska Händelser</a>
+            <a class="navbar-item" href="about.html">Om oss</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero-bild-->
+      <section class="hero">
+        <div class="hero-body">
+          <figure>
+            <img
+              src="images/explore-hero.webp"
+              alt="Hero-bild efterliknad rymden."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!--Introduktionstext till sidan.-->
+      <div class="columns">
+        <div class="column mt-5">
+          <div class="content has-text-centered px-6">
+            <h1>Utforska Rymden!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              accumsan, metus ultrices eleifend gravida, nulla nunc varius
+              lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+              Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+              illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis eaque nisi laboriosam voluptate, veniam eos nesciunt
+              ipsam temporibus amet, nulla sunt dolore asperiores ab recusandae
+              molestias magni quasi? Eos libero nobis quaerat inventore facilis
+              odio ducimus quidem minus amet velit. Reprehenderit, dolores
+              maxime. Cupiditate saepe fugit rerum quis quia sunt libero
+              asperiores numquam! Quod voluptatum veniam magni illo modi fugiat
+              nam eveniet autem, eligendi minus explicabo similique sint
+              assumenda dignissimos at sunt? Eum voluptas officiis dolorum in
+              adipisci sint ut nemo quae ipsa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Sektion med underkategorier. Använder Bulmas sektion och container.-->
+      <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <!--Card 1. Lägger till Bulmas kolumner och anger att de ska ta upp en 
+            tredjedel av sidan vardera.-->
+            <div class="column is-one-third">
+              <!--Lägger till Bulmas cards och anger att dess innehåll ska vara centrerat. Tar bort innehåll
+              jag ej vill använda som användarnamn och länkar, samt byter plats på titeln och bilden. Lägger till 
+              Bulmas klassiska knapp som agerar som en länk.-->
+              <div class="card has-text-centered">
+                <div class="card-content">
+                  <h3 class="title is-4">Solsystemet</h3>
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/solar-system-link.webp"
+                      alt="Bildlänk till solsystemet."
+                    />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima aliquam error saepe quisquam vel repellat inventore
+                    quidem nesciunt et? Dolores culpa porro unde praesentium ad
+                    molestiae, animi necessitatibus quos cumque nemo iste aut,
+                    cupiditate corporis exercitationem nobis, commodi dicta
+                    quia!
+                  </p>
+                  <a href="solar-system.html" class="button is-link mt-4"
+                    >Läs mer om Solsystemet</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Card 2. Liknar den första.-->
+            <div class="column is-one-third">
+              <div class="card has-text-centered">
+                <div class="card-content">
+                  <h3 class="title is-4">Galaxer och Stjärnor</h3>
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/galaxy-link.webp"
+                      alt="Bildlänk till galaxer och stjärnor."
+                    />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nihil dolor doloremque nisi laborum obcaecati nesciunt,
+                    deserunt ipsum ipsa odio at fugit? Nisi repellendus nemo
+                    itaque obcaecati minima, ratione libero possimus incidunt
+                    adipisci iste ipsam, debitis voluptatem dignissimos, cum
+                    tempore voluptas?
+                  </p>
+                  <a href="#" class="button is-link mt-4"
+                    >Läs mer om Galaxer och Stjärnor</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Card 3. Liknar den första.-->
+            <div class="column is-one-third">
+              <div class="card has-text-centered">
+                <div class="card-content">
+                  <h3 class="title is-4">Rymdfenomen</h3>
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/space-phenomen-link.webp"
+                      alt="Bildlänk till rymdfenomen."
+                    />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto exercitationem in, voluptatem commodi vel,
+                    quibusdam deleniti fuga nam saepe, blanditiis officia
+                    voluptatibus animi incidunt quidem deserunt! Sunt corrupti
+                    distinctio magni, veniam atque maxime blanditiis velit eius,
+                    vero reiciendis temporibus. Fugit?
+                  </p>
+                  <a href="#" class="button is-link mt-4"
+                    >Läs mer om Rymdfenomen</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Feedback-formulär.-->
+      <section class="section">
+        <div class="container">
+          <h3 class="title is-5 has-text-centered mb-5">
+            Saknar du någon information på sidan?
+          </h3>
+          <form class="box">
+            <div class="field my-6">
+              <label class="label">Namn</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="För-och efternamn"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Din feedback</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="feedback"
+                  placeholder="Vad saknar du för information?"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="field is-centered has-text-centered my-6">
+              <button type="submit" class="button is-link">Skicka</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Footer.-->
+      <footer class="footer">
+        <div class="content has-text-centered mt-6">
+          <p class="is-size-5"><strong>RymdResan</strong></p>
+          <p><a href="#">kontakt@rymdresan.se</a></p>
+          <p>Storgatan 21, 123 45 Stockholm, Sverige</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

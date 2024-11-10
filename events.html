@@ -1,0 +1,389 @@
+<!--Astronomiska händelser, events.-->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+    <title>Rymdresan</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ml-6">
+          <a class="navbar-item" href="index.html">
+            <span class="navbar-item has-text-weight-bold is-size-3"
+              >RymdResan</span
+            >
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu mr-6">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="explore.html">Utforska rymden</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="solar-system.html">Solsystemet</a>
+                <a class="navbar-item" href="#">Galaxer och Sjärnor</a>
+                <a class="navbar-item" href="#">Rymdfenomen</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Lektioner och Galaxer</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Interaktiva Lektioner</a>
+                <a class="navbar-item" href="#">Hemmaexperiment</a>
+                <a class="navbar-item" href="quiz.html">Quiz och Frågesport</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#">Rymdforskning</a>
+            <a class="navbar-item" href="events.html">Astromiska Händelser</a>
+            <a class="navbar-item" href="about.html">Om oss</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero-bild.-->
+      <section class="hero">
+        <div class="hero-body">
+          <figure>
+            <img
+              src="images/events-hero.webp"
+              alt="Hero-bild efterliknad rymduppskjutning."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!--Introduktionstext till sidan.-->
+      <div class="columns">
+        <div class="column mt-5">
+          <div class="content has-text-centered px-6">
+            <h1>Astronomiska Händelser</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              accumsan, metus ultrices eleifend gravida, nulla nunc varius
+              lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+              Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+              illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis eaque nisi laboriosam voluptate, veniam eos nesciunt
+              ipsam temporibus amet, nulla sunt dolore asperiores ab recusandae
+              molestias magni quasi? Eos libero nobis quaerat inventore facilis
+              odio ducimus quidem minus amet velit. Reprehenderit, dolores
+              maxime. Cupiditate saepe fugit rerum quis quia sunt libero
+              asperiores numquam! Quod voluptatum veniam magni illo modi fugiat
+              nam eveniet autem, eligendi minus explicabo similique sint
+              assumenda dignissimos at sunt? Eum voluptas officiis dolorum in
+              adipisci sint ut nemo quae ipsa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Sektion för kommande händelser. Lägger till Bulmas sektion och container samt en rubrik 
+      centralt ovanför sektionen.-->
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Kommande händelser</h2>
+
+          <!--Händelse 1. Använder Bulmas kolumner. Anger att bilden och paragraferna ska ta upp halva 
+          kolumnen vardera. Lägger till marfinal ovanför och nedanför händelsen. Lägger till ett datum från 
+          Bulmas komponent card.-->
+          <div class="columns is-centered mt-6">
+            <div class="column is-half mb-6">
+              <figure>
+                <img
+                  src="images/events-moon.webp"
+                  alt="Bild efterliknad Månen från nära avstånd."
+                />
+              </figure>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-4">
+                Thomas Ray och Elisabeth Johnson landar på månen!
+              </h3>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium facere harum rerum ipsam at debitis magnam
+                distinctio dolores, sed corrupti soluta iusto corporis nihil
+                ratione minus nisi sapiente sint dolore!
+              </p>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quam architecto quia obcaecati labore adipisci
+                voluptate corporis a? Repudiandae obcaecati, commodi incidunt
+                aut vitae cupiditate error laudantium rerum voluptates saepe
+                quis necessitatibus aspernatur totam unde officia, autem animi,
+                quia dolorum provident nulla. Quam itaque cumque eveniet quas
+                ipsa dolores odit, delectus reiciendis illo, est expedita
+                officia ipsum ipsam consectetur in.
+              </p>
+              <time datetime="2024-11-04">4 nov 2024</time>
+            </div>
+          </div>
+
+          <!--Händelse 2. Liknar den första. -->
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <figure>
+                <img
+                  src="images/events-rocket.webp"
+                  alt="Bild efterliknad raketuppskjutning."
+                />
+              </figure>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-4">Uppskjutning för Stella 7!</h3>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                dicta alias labore corrupti dignissimos enim voluptates
+                distinctio dolor quia, saepe, accusamus voluptatibus ipsam atque
+                culpa aperiam ad possimus facilis repellendus recusandae rem
+                deleniti autem voluptatum. Eos id molestias, cumque est
+                doloremque fuga quisquam eius iste, iusto quo nesciunt
+                voluptatibus consectetur!
+              </p>
+              <p class="content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                rerum quis ab aut optio ex delectus eveniet accusantium maxime
+                omnis, veniam, voluptas harum reprehenderit officia aliquid
+                consectetur repellendus praesentium qui quasi error facilis
+                soluta voluptates ducimus. Consectetur sequi praesentium animi.
+              </p>
+              <time datetime="2024-10-25">25 okt 2024</time>
+            </div>
+          </div>
+          <div class="has-text-centered mt-6">
+            <a href="#">Visa fler kommande astronomiska händelser</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Sektion för tidigare händelser. Lägger till Bulmas sektion och container. Använder en rubrik
+      och underrubrik för att beskriva innehållet. Anger dess textstorlek, att de ska vara centrala och lägger
+      till marginal.-->
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Tidigare händelser</h2>
+          <h3 class="subtitle is-5 has-text-centered mb-6 mt-3">
+            Inlägg från våra läsare som fångat rymdfenomen på bild.
+          </h3>
+          <div class="columns is-centered">
+            <!--lägger till Bulmas kolumner och anger att de ska ta upp en tredjedel av sidan vardera. Lägger till Bulmas komponent
+            cards. Tar bort innehåll jag ej vill använda, som länkarna.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/post1.webp"
+                      alt="Publikation efterliknad solförmörkelse."
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/profile1.webp" alt="Profilbild." />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Sandra Ohlsson</p>
+                      <p class="subtitle is-6">@s.ohlsson79</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                    </p>
+                    <time datetime="2024-10-13">14:27 - 13 okt 2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card 2. Liknar den första.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/post2.webp"
+                      alt="Publikation efterliknad norrsken."
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/profile2.webp" alt="Profilbild." />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Hugo Lindström</p>
+                      <p class="subtitle is-6">@Daniel123</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit amet. Harum sint dolores fuga
+                      assumenda quis iste saepe.
+                    </p>
+                    <time datetime="2024-09-27">21:05- 27 sep 2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card 3. Liknar den första.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="images/post3.webp"
+                      alt="Publikation efterliknad norrsken."
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/profile3.webp" alt="Profilbild." />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Svensson</p>
+                      <p class="subtitle is-6">@svensson.81</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nostrum, sequi.
+                    </p>
+                    <time datetime="2024-09-14">09:54- 14 sep 2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="has-text-centered mt-6">
+            <a href="#">Visa fler tidigare astronomiska händelser</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Formulär. Lägger till ett formulär likt feedback-formuläret. Använder Bulmas kompletta exempel och 
+      tar bort innehåll jag ej vill använda, som namn och ämne.-->
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-4 has-text-centered mb-4">
+            Vill du att din bild ska visas på vår sida?
+          </h2>
+          <p class="has-text-centered">
+            Dela din instagrambild på en astronomisk händelse med oss.
+          </p>
+          <p class="has-text-centered mb-6">
+            Fyll i formuläret nedan med ditt användarnamn på instagram, skriv
+            din email-adress och beskriv din bild.
+          </p>
+
+          <div class="field">
+            <label class="label">Användarnamn</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="@anvandarnamn" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="email" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Meddelande</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                placeholder="Beskriv din bild. När publicerade du den?"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center my-6">
+            <div class="control">
+              <button class="button is-link">Skicka</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Feedback-formulär.-->
+      <section class="section">
+        <div class="container">
+          <h3 class="title is-5 has-text-centered mb-5">
+            Saknar du någon information på sidan?
+          </h3>
+          <form class="box">
+            <div class="field my-6">
+              <label class="label">Namn</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="För-och efternamn"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Din feedback</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="feedback"
+                  placeholder="Vad saknar du för information?"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="field is-centered has-text-centered my-6">
+              <button type="submit" class="button is-link">Skicka</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="content has-text-centered mt-6">
+          <p class="is-size-5"><strong>RymdResan</strong></p>
+          <p><a href="#">kontakt@rymdresan.se</a></p>
+          <p>Storgatan 21, 123 45 Stockholm, Sverige</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

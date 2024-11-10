@@ -1,0 +1,412 @@
+<!--Underkategori solsystemet, solar-system.-->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+    <title>Rymdresan</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Navigation.-->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ml-6">
+          <a class="navbar-item" href="index.html">
+            <span class="navbar-item has-text-weight-bold is-size-3"
+              >RymdResan</span
+            >
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu mr-6">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="explore.html">Utforska rymden</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="solar-system.html">Solsystemet</a>
+                <a class="navbar-item" href="#">Galaxer och Sjärnor</a>
+                <a class="navbar-item" href="#">Rymdfenomen</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Lektioner och Galaxer</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Interaktiva Lektioner</a>
+                <a class="navbar-item" href="#">Hemmaexperiment</a>
+                <a class="navbar-item" href="quiz.html">Quiz och Frågesport</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#">Rymdforskning</a>
+            <a class="navbar-item" href="events.html">Astromiska Händelser</a>
+            <a class="navbar-item" href="about.html">Om oss</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero-bild.-->
+      <section class="hero">
+        <div class="hero-body">
+          <figure>
+            <img
+              src="images/solar-system-hero.webp"
+              alt="Hero-bild efterliknad Solen."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!--Introduktionstext till sidan.-->
+      <div class="columns">
+        <div class="column mt-5">
+          <div class="content has-text-centered px-6">
+            <h1>Upptäck Vår Sol och Planeterna Som Kretsar Runt Den!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              accumsan, metus ultrices eleifend gravida, nulla nunc varius
+              lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+              Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+              illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis eaque nisi laboriosam voluptate, veniam eos nesciunt
+              ipsam temporibus amet, nulla sunt dolore asperiores ab recusandae
+              molestias magni quasi? Eos libero nobis quaerat inventore facilis
+              odio ducimus quidem minus amet velit. Reprehenderit, dolores
+              maxime. Cupiditate saepe fugit rerum quis quia sunt libero
+              asperiores numquam! Quod voluptatum veniam magni illo modi fugiat
+              nam eveniet autem, eligendi minus explicabo similique sint
+              assumenda dignissimos at sunt? Eum voluptas officiis dolorum in
+              adipisci sint ut nemo quae ipsa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Lägger till Bulmas sektion och container. Lägger till en rubrik centralt och flera kolumner. -->
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered mb-6">Solsystemet</h2>
+          <div class="columns is-multiline is-centered">
+            <!--Solen. Använder Bulmas cards och anger att dess rubrik ska vara centrerad. Tar bort innehåll
+            jag ej vill använda som användarnamn och länkar, samt byter plats på titeln och bilden. Lägger till 
+            en länk längst ner.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Solen</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/sun.webp" alt="Bild på Solen." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore suscipit, autem ipsa enim adipisci officia aperiam.
+                    Accusamus dolor repellat, vel nam dolores facere quibusdam
+                    eos?
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet mollitia similique assumenda itaque quis? Veritatis
+                    nobis laboriosam dolorem expedita ut mollitia consectetur
+                    iste nemo quibusdam aliquid repellat quas pariatur ullam
+                    consequatur, in nesciunt similique distinctio consequuntur.
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Solen</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Merkurius. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Merkurius</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/mercury.webp" alt="Bild på Merkurius." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dignissimos, aperiam nobis eveniet sit temporibus non nisi
+                    vitae? Vero ab, sit eius vel quod exercitationem, earum
+                    provident expedita dolores illum hic beatae porro
+                    repellendus nemo cupiditate.
+                  </p>
+                  <p class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Recusandae, fuga fugit quo, ut sint laudantium veniam
+                    quaerat optio doloribus animi est autem totam. Minima earum
+                    rerum alias dolorem? Sequi, vero.
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Merkurius</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Venus. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Venus</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/venus.webp" alt="Bild på Venus." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, neque illo esse, perferendis architecto sapiente ea
+                    tempore ad cumque placeat cupiditate hic provident sed
+                    dolores magni ratione modi reprehenderit vero fugiat maxime
+                    vel corrupti aliquid earum. Laudantium cupiditate odio,
+                    explicabo sequi mollitia temporibus nemo eius!
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Libero quae nisi, tempore aspernatur ea eum hic modi culpa
+                    amet minima?
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Venus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Jorden. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Jorden</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/earth.webp" alt="Bild på Jorden." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero magni neque accusamus, maxime vero, alias quos
+                    temporibus, natus facere voluptas aliquam aut hic offici...
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Esse ex odit quia sit iusto quos magnam velit similique.
+                    Incidunt iusto eos magni id, itaque eaque dolorem esse
+                    architecto, sint, possimus excepturi. Saepe beatae dicta
+                    optio aut rerum eligendi facilis magni?
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Jorden</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Mars. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Mars</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/mars.webp" alt="Bild på Mars." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt neque cupiditate nam vero quod, nesciunt itaque
+                    eligendi maiores facilis dolor corporis minus explicabo
+                    dolorum libero.
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam esse quae tempore fuga animi quia totam fugiat
+                    veritatis. Quod similique, tempore nisi recusandae doloribus
+                    eos quidem. Quis voluptate optio nisi!
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Mars</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Jupiter. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Jupiter</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/jupiter.webp" alt="Bild på Jupiter." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem, qui dolorem ex ipsum? Temporibus aut rem dolor
+                    molestiae, error laborum earum.
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum beatae at tenetur mollitia ea! Molestias,
+                    exercitationem. Sequi perferendis, alias, sapiente atque
+                    nobis accusamus a obcaecati fugit dolorum nisi quas iusto
+                    neque.
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Jupiter</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Saturnus. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Saturnus</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/saturn.webp" alt="Bild på Saturnus." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Qui deleniti tempora et nesciunt architecto id voluptates in
+                    neque dignissimos libero. Fugit qui adipisci nisi iure ipsam
+                    architecto, odit natus et aspernatur temporibus repudiandae
+                    impedit dolor officiis id est autem unde?
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto dolorem rerum eos nemo! Eligendi quod error autem
+                    totam rem aperiam magnam nulla ab et temporibus!
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Satunus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Uranus. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Uranus</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/uranus.webp" alt="Bild på Uranus." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quibusdam blanditiis fuga reprehenderit animi laborum
+                    voluptatum doloremque, perferendis molestiae voluptatibus
+                    pariatur hic, error iure repudiandae voluptate.
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cum accusamus optio fugiat a. Ipsam ratione inventore
+                    voluptate animi, quas eligendi eos mollitia dolores nam at
+                    quis sequi officia debitis nostrum fugiat.
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Uranus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Neptunus. Liknar solen.-->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4 has-text-centered">Neptunus</h3>
+                  <figure class="image is-4by3">
+                    <img src="images/neptune.webp" alt="Bild på Neptunus." />
+                  </figure>
+                  <p class="content mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta inventore magnam tenetur soluta aliquam dolor. Eius ad
+                    asperiores culpa, tempora eum magnam, veritatis voluptatem
+                    sunt tempore nisi voluptates?
+                  </p>
+                  <p class="content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Illo delectus sunt eum reprehenderit cupiditate explicabo
+                    quos. Magnam quod adipisci praesentium quidem, corporis
+                    architecto at aspernatur tempore sit.
+                  </p>
+                  <a href="#" class="has-text-centered is-block"
+                    >Läs mer om Neptunus</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Quiz? Lägger till en sektion och container med en rubrik, paragram och en klassisk 
+      knapp som agerar som en länk.-->
+      <div class="section">
+        <div class="container has-text-centered">
+          <h2 class="title is-4">Vill du testa dina kunskaper?</h2>
+          <p class="subtitle is-5 mt-2">
+            Kolla in vårt quiz om solsystemet och se hur mycket du lärt dig!
+          </p>
+          <a href="quiz.html" class="button is-link">Testa Quizet</a>
+        </div>
+      </div>
+
+      <!--Feedback-formulär.-->
+      <section class="section">
+        <div class="container">
+          <h3 class="title is-5 has-text-centered mb-5">
+            Saknar du någon information på sidan?
+          </h3>
+          <form class="box">
+            <div class="field my-6">
+              <label class="label">Namn</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="För-och efternamn"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Din feedback</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="feedback"
+                  placeholder="Vad saknar du för information?"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="field is-centered has-text-centered my-6">
+              <button type="submit" class="button is-link">Skicka</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="content has-text-centered mt-6">
+          <p class="is-size-5"><strong>RymdResan</strong></p>
+          <p><a href="#">kontakt@rymdresan.se</a></p>
+          <p>Storgatan 21, 123 45 Stockholm, Sverige</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

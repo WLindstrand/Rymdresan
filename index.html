@@ -1,0 +1,268 @@
+<!--Startsidan, hem.-->
+
+<!--Anger instruktioner till webbläsaren vilken typ och version av HTML som används.
+Länkar till Bulmas CSS-ramverk.-->
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+    <title>Rymdresan</title>
+  </head>
+  <body>
+    <!--Omslutande div kring alla element.-->
+    <div class="container">
+      <!-- Navigation. Använder Bulmas responsiva, horisontella navigeringsfält.
+      Lägger till marginal åt vänster. Använder en logga som länk till startsidan, index.
+      Lägger till fet stil och ökar textstorleken.-->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ml-6">
+          <a class="navbar-item" href="index.html">
+            <span class="navbar-item has-text-weight-bold is-size-3"
+              >RymdResan</span
+            >
+          </a>
+
+          <!--Hamburgermeny för mindre skärmar.-->
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <!--Huvudmeny för större skärmar. Lägger till marginal åt höger.
+        Länkar till alla sidor, inklusive undersidor genom en dropdown-meny.-->
+        <div id="navbarBasicExample" class="navbar-menu mr-6">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="explore.html">Utforska rymden</a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="solar-system.html">Solsystemet</a>
+                <a class="navbar-item" href="#">Galaxer och Stjärnor</a>
+                <a class="navbar-item" href="#">Rymdfenomen</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Lektioner och Galaxer</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Interaktiva Lektioner</a>
+                <a class="navbar-item" href="#">Hemmaexperiment</a>
+                <a class="navbar-item" href="quiz.html">Quiz och Frågesport</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#">Rymdforskning</a>
+            <a class="navbar-item" href="events.html">Astromiska Händelser</a>
+            <a class="navbar-item" href="about.html">Om oss</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero-bild. Använder Bulmas hero title och lägger till en responsiv bild, figure. -->
+      <section class="hero">
+        <div class="hero-body">
+          <figure>
+            <img
+              src="images/index-hero.webp"
+              alt="Hero-bild efterliknad rymden."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Välkomstsektion med en introduktionstext. Använder Bulmas simpla responsiva kolumn
+      och lägger till content samt en klassisk knapp som angerar som en länk. Utöver Bulmas färdigkomponerade
+      element anger jag att det ska vara marginal ovanför och nedanför kolumnen, att all text ska 
+      vara centrerad på sidan samt padding i sidled. Ovanför knappen lägger jag också till marginal.-->
+      <div class="columns">
+        <div class="column my-5">
+          <div class="content has-text-centered px-6">
+            <h1>Välkommen till RymdResan!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              accumsan, metus ultrices eleifend gravida, nulla nunc varius
+              lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+              Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+              illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis eaque nisi laboriosam voluptate, veniam eos nesciunt
+              ipsam temporibus amet, nulla sunt dolore asperiores ab recusandae
+              molestias magni quasi? Eos libero nobis quaerat inventore facilis
+              odio ducimus quidem minus amet velit. Reprehenderit, dolores
+              maxime. Cupiditate saepe fugit rerum quis quia sunt libero
+              asperiores numquam! Quod voluptatum veniam magni illo modi fugiat
+              nam eveniet autem, eligendi minus explicabo similique sint
+              assumenda dignissimos at sunt? Eum voluptas officiis dolorum in
+              adipisci sint ut nemo quae ipsa.
+            </p>
+            <a href="about.html" class="button is-link mt-3">Läs mer om oss</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Notifikation med aktuell information. Använder Bulmas exempel för en blå notifikation.
+      Lägger till marginal och en paragraf som agerar som en rubrik.-->
+      <div class="notification is-link m-6">
+        <button class="delete"></button>
+        <p class="mb-3 is-size-5">
+          <strong>Andreas Mogensen är i rymden just nu!</strong>
+        </p>
+        <p>
+          Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+          ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec
+          nulla. Vestibulum rhoncus ac ex sit amet fringilla. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Similique, quia sequi.
+          Consequatur aperiam, expedita fugiat delectus a eveniet illo facilis
+          iusto, commodi dolore, quos laudantium! Nullam gravida purus diam, et
+          dictum <a>Läs om Andreas rymdresa</a> efficitur. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Ipsa, perferendis!
+        </p>
+      </div>
+
+      <!--Kolumner. Använder Bulmas simpla responsiva kolumner. Anger att texten ska vara centrerad
+      i kolumnen och lägger till marginal.-->
+      <div class="columns has-text-centered m-6">
+        <!--Första kolumnen. Lägger till marginal åt höger för att skapa mellanrum mellan kolumnerna.-->
+        <div class="column mr-6">
+          <!--Använder Bulmas färdiga komponent card. Tar bort den implementerade profilbilden och 
+          användarnamnet för att endast behålla en rubrik och paragraf. Lägger till en klassisk knapp
+          som agerar som en länk.-->
+          <div class="card p-4">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="images/events-link.webp"
+                  alt="Bild på ett meteoritnedslag."
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <!--Ökar textstorleken.-->
+                  <p class="title is-4">Meteoritnedslag på väg mot jorden!</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas quo alias autem, ut, totam voluptatum, ea nam nulla
+                  recusandae adipisci mollitia a nihil quae explicabo aliquam
+                  perferendis non est cumque. Blanditiis, eligendi accusantium
+                  tempora natus dolores quos cumque quibusdam possimus molestiae
+                  explicabo qui iure atque. Maiores nam possimus excepturi nemo
+                  accusantium officia quisquam libero, dolorem aperiam
+                  voluptatem voluptate, nobis officiis quia omnis consequuntur
+                  beatae modi dolorum quo animi. Facere quis quae beatae
+                  voluptates placeat labore distinctio iste ab suscipit
+                  explicabo.
+                </p>
+                <!--Lägger till marginal ovanför knappen.-->
+                <a href="events.html" class="button is-link mt-3"
+                  >Läs mer om astronomiska händelser</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Andra kolumnen. Liknar den första.-->
+        <div class="column ml-6">
+          <div class="card p-4">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="images/experiment-link.webp"
+                  alt="Bild på en människa med ett teleskop."
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Fånga stjärnorna på natthimlen</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio necessitatibus, quidem mollitia nesciunt assumenda
+                  at maxime omnis dicta incidunt tempore odio? Rem dolor
+                  accusantium exercitationem voluptatibus quisquam, consectetur
+                  labore dolore blanditiis aliquam ex fugit? Id quia ex sit
+                  nihil possimus dicta, natus adipisci vero dolor mollitia
+                  sapiente in illo quod, nostrum quis et! Ullam soluta atque
+                  nemo voluptatum suscipit dolores enim reiciendis expedita ea,
+                  iure velit necessitatibus at sed ipsum harum provident
+                  dignissimos, placeat, dolore laboriosam veniam? Illum, quidem
+                  sit.
+                </p>
+                <a href="#" class="button is-link mt-3"
+                  >Utforska fler hemmaexperiment</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback-formulär. Använder Bulmas form controls och tar bort funktioner jag ej vill använda.
+      Behåller endast fält för namn, meddelandet och knappen. Lägger till en rubrik ovanför formuläret. Anger
+      textstorleken och centrerar den. -->
+      <section class="section">
+        <div class="container">
+          <h3 class="title is-5 has-text-centered mb-5">
+            Saknar du någon information på sidan?
+          </h3>
+          <form class="box">
+            <div class="field my-6">
+              <label class="label">Namn</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="För-och efternamn"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Din feedback</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="feedback"
+                  placeholder="Vad saknar du för information?"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="field is-centered has-text-centered my-6">
+              <button type="submit" class="button is-link">Skicka</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Footer. Använder Bulmas simpla responsiva sidfot och lägger till paragrafer. 
+      Anger att innehållet ska vara centrerat och lägger till marginal ovanför.-->
+      <footer class="footer">
+        <div class="content has-text-centered mt-6">
+          <p class="is-size-5"><strong>RymdResan</strong></p>
+          <p><a href="#">kontakt@rymdresan.se</a></p>
+          <p>Storgatan 21, 123 45 Stockholm, Sverige</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
